@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layout_message"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/balloon_frame_16697857">
+
+        <TextView
+            android:id="@+id/message_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:paddingStart="100sp"
+            android:paddingEnd="80sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/message_to"
+            tools:text="Count not the candles…see the lights they give. Count not the years, but the life you live. Wishing you a wonderful time ahead. Happy birthday."
+            style="@style/message_style" />
+
+        <TextView
+            android:id="@+id/message_to"
+            style="@style/message_style"
+            android:layout_width="74dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.299"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.26999998"
+            tools:text="Pranith" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="180dp"
+            android:layout_height="151dp"
+            android:src="@drawable/hpd"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.554"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/message_text"
+            app:layout_constraintVertical_bias="0.32" />
+
+        <TextView
+            android:id="@+id/message_from"
+            style="@style/message_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="120dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.708"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/message_text"
+            app:layout_constraintVertical_bias="0.06999999"
+            tools:text="Pranith" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
